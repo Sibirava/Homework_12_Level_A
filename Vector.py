@@ -1,9 +1,10 @@
 import random
 NUMBER = 20
-RANDOM_VALUE = 100
+RANDOM_VALUE_UP = 100
+RANDOM_VALUE_DOWN = -100
 def random_vector_elements():
     n = NUMBER
-    vector = [random.randint(-100, RANDOM_VALUE) for i in range(n)]
+    vector = [random.randint(RANDOM_VALUE_DOWN, RANDOM_VALUE_UP) for i in range(n)]
     return vector
 
 def enter_vector_elements():
